@@ -1,0 +1,17 @@
+#!/bin/sh
+#SBATCH --cpus-per-task=16
+#SBATCH --job-name=HCV_model_exe_Fg_v1
+#SBATCH --ntasks=1
+#SBATCH --time=2-00:00:00
+#SBATCH --mail-user=Maryam.Sadeghimehr@unige.ch
+#SBATCH --mail-type=ALL
+#SBATCH --partition=parallel
+#SBATCH --clusters=baobab
+#SBATCH --output=slurm-%J.out
+#module load GCC/4.9.3-2.25  OpenMPI/1.10.2 R/3.3.2
+module load foss/2016a R/3.3.2
+echo "running yohaaaa"
+
+#srun Rscript --ntasks=10 HCV_model_exe_c1.R
+srun Rscript HCV_model_exe_Fg_1.R
+echo "I am done"

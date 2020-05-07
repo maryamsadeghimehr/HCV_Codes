@@ -1,0 +1,27 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+# A Comprehensive Mathematical Model of the Swiss HCV epidemic
+
+We present a multistage model which consists of two dimensions: progress of liver disease and cascade of HCV care. We define the stages of liver disease from healthy liver  to compensated liver cirrhosis (F0 - F4) based on the METAVIR scoring system (F0: no fibrosis, F1: portal fibrosis without septa, F2: portal fibrosis with rare septa, F3: numerous septa without cirrhosis, F4  cirrhosis). Moreover, individuals in METAVIR stage F4 can progress to Decompensated Cirrhosis (DC), Hepatocellular Carcinoma (HCC) or Transplanted liver stage. Progression from DC to HCC or liver transplant stage is also possible.
+
+**Baseline Characteristics:**
+
+The model will take into account the following characteristics at the time of HCV infection:
+
+* Age
+*	Year of birth
+* Gender
+*	Country of origin (high risk countries versus low risk countries) 
+* Alcohol consumption (Abstinent, Moderate user (0.1 - 24 g per day) and Heavy user (more than 24 g per day))
+*	HIV co-infection (HIV-infected before entering the cohort, Uninfected, HIV-infected during the simulation(after entering the cohort)) 
+*	MSM (HIV infected Men have Sex with Men) 
+
+Moreover, we take into account the IDU group and HIV-infected group as the group of people who are in high risk of encountering HCV. For drug users we consider the time of starting and stopping drug consumption.
+
+At any disease stages, individuals are allowed to progress along a cascade of care; they can be acute, chronic undiagnosed, chronic diagnosed, treated, and succeed or failed treatment. Individuals who are failed in treatment can be treated again. Individuals could also spontaneously clear the infection. Death can occur at any stages and the cause of death can be liver related, HIV related, Drug use related, related to extrahepatic manifestation or can simply be natural.
+
+
+* [c4science](https://c4science.ch/diffusion/3744/)
